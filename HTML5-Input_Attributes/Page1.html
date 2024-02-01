@@ -1,0 +1,154 @@
+<!-- Html5 Input Attributes and Restrictions  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormElements Page</title>
+    <!--I'm  Added styling for better web page. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            width: 550px;
+            margin-left: 360px;
+        
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            margin-bottom: 20px;
+        }
+
+        marquee {
+            font-size: 16px;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Input Attributes -->
+<form action="#" method="post">
+    <label for="text">Text:</label>
+    <input type="text" id="text" name="text" value="Default Text"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="submit">Submit:</label>
+    <input type="submit" id="submit" value="Submit"><br>
+
+    <label for="reset">Reset:</label>
+    <input type="reset" id="reset" value="Reset"><br>
+
+    <label for="radio">Radio:</label>
+    <input type="radio" id="radio" name="radio" value="radio"><br>
+
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox"><br>
+
+    <label for="button">Button:</label>
+    <input type="button" id="button" value="Button"><br>
+</form>
+
+<!-- 2. HTML5 Input Types -->
+<label for="number">Number:</label>
+<input type="number" id="number" name="number" min="1" max="10"><br>
+
+<label for="range">Range:</label>
+<input type="range" id="range" name="range" min="1" max="100"><br>
+
+<label for="color">Color:</label>
+<input type="color" id="color" name="color" value="#ff0000"><br>
+
+<label for="date">Date:</label>
+<input type="date" id="date" name="date"><br>
+
+<label for="file">File:</label>
+<input type="file" id="file" name="file"><br>
+
+<label for="time">Time:</label>
+<input type="time" id="time" name="time"><br>
+
+<label for="month">Month:</label>
+<input type="month" id="month" name="month"><br>
+
+<label for="week">Week:</label>
+<input type="week" id="week" name="week"><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br>
+
+<!-- 3. Input Restrictions -->
+<label for="disabled">Disabled:</label>
+<input type="text" id="disabled" name="disabled" disabled><br>
+
+<label for="max">Max Length (5):</label>
+<input type="text" id="max" name="max" maxlength="5"><br>
+
+<label for="min">Min Value (5):</label>
+<input type="number" id="min" name="min" min="5"><br>
+
+<label for="readonly">Readonly:</label>
+<input type="text" id="readonly" name="readonly" readonly value="Readonly"><br>
+
+<label for="required">Required:</label>
+<input type="text" id="required" name="required" required><br>
+
+<label for="size">Size (10):</label>
+<input type="text" id="size" name="size" size="10" value="Size"><br>
+
+<label for="value">Default Value:</label>
+<input type="text" id="value" name="value" value="Default Value"><br>
+
+<!-- 4. Target Attribute -->
+<a href="https://www.linkedin.com/in/suman-sahni-392653231/" target="_blank">Example.com</a>
+
+<!-- 5. Iframes and Marquee (Discouraged) -->
+<iframe src="https://www.naukri.com/mnjuser/profile?id=&altresid" width="400" height="300" frameborder="0"></iframe>
+
+<marquee behavior="scroll" direction="left">This is a scrolling marquee.</marquee>
+
+</body>
+</html>

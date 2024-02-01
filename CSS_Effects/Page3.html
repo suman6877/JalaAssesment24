@@ -1,0 +1,74 @@
+<!-- Add positions to CSS block: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .position-container {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      margin: 20px;
+    }
+
+    .static-block {
+      position: static;
+      background-color: #aaffaa;
+    }
+
+    .relative-block {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: #aaffaa;
+      width: 280px;
+
+    }
+
+    .fixed-block {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #aaffaa;
+    }
+
+    .absolute-block {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #aaffaa;
+    }
+
+    .sticky-block {
+      position: sticky;
+      top: 20px;
+      background-color: #aaffaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="position-container">
+  <div class="static-block">Static</div>
+</div>
+
+<div class="position-container">
+  <div class="relative-block">Relative</div>
+</div>
+
+<div class="position-container">
+  <div class="fixed-block">Fixed</div>
+</div>
+
+<div class="position-container" style="position: relative;">
+  <div class="absolute-block">Absolute</div>
+</div>
+
+<div class="position-container" style="height: 400px;">
+  <div class="sticky-block">Sticky</div>
+</div>
+
+</body>
+</html>

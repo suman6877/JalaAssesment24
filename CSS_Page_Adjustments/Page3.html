@@ -1,0 +1,88 @@
+<!-- Scroll to top/bottom with smooth scroll: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      height: 2000px; /* To create a long page for demonstration */
+    }
+
+    .scroll-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      /* margin-left: 500px; */
+    }
+    .scroll-link1 {
+      position: fixed;
+      bottom: 20px;
+      right: 450px;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      /* margin-right: 150px; */
+    }
+    .scroll-link2 {
+      position: fixed;
+      bottom: 10px;
+      /* right: 20px; */
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+     
+     
+    }
+
+    .scroll-link:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="#top" class="scroll-link" style="scroll-behavior: smooth;">Click to go to top of page</a>
+<a href="#middle" class="scroll-link1" style="scroll-behavior: smooth;">Click to go to middle of page</a>
+<a href="#bottom" class="scroll-link2" style="scroll-behavior: smooth;">Click to go to bottom of page</a>
+
+<!-- Content to make the page long -->
+<!-- ... -->
+
+<!-- Anchor points for smooth scrolling -->
+<div id="top"><p>JALA Academy is the world’s first Academy offering 100% Job guarantee 
+    Programs without Trainers from 0 to 20 years’ experience. 
+    Anyone who wants to build solid career in IT can enroll.
+    Read JALA Academy website and contact us for any career advice and questions.
+    </p></div>
+
+<div id="middle"><p> JALA Academy offers Job Guarantee Programs, Income Earning Opportunities, and Internship 
+    with stipend on Full Stack, MERN Stack, QA, Test Automation, RPA, Cloud Technologies, 
+    DevOps and Cyber Security. Read our website JALA Academy for more details.
+</p></div>
+
+<div id="bottom">Hi My name is Suman kumar sahni . i complete my B.Tech from Jis college of engineering
+    right now im working as a fromt-end developer , i habe 2 year of experience. </div>
+
+<script>
+  document.querySelector('.scroll-link:nth-child(2)').addEventListener('click', function() {
+    const middleSection = document.getElementById('middle');
+    middleSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,28 @@
+<!-- JavaScript Validation on Submit: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="textBox">Enter Text:</label>
+        <input type="text" id="textBox" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            const textBoxValue = document.getElementById('textBox').value;
+
+            if (!textBoxValue.trim()) {
+                alert('Text box cannot be empty!');
+                event.preventDefault(); 
+            }
+        });
+    </script>
+</body>
+</html>

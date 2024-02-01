@@ -1,0 +1,30 @@
+<!-- Program for a simple counter: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .Count{
+            font-size:x-large;
+        }
+    </style>
+</head>
+<body>
+
+<p class="Count">Count: <span id="count">0</span></p>
+<button onclick="incrementCounter()">Count</button>
+
+<script>
+    let countValue = 0;
+
+    function incrementCounter() {
+        countValue++;
+        document.getElementById("count").innerText = countValue;
+    }
+</script>
+
+</body>
+</html>

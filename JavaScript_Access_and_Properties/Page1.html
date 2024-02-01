@@ -1,0 +1,29 @@
+<!-- Program to make a button disappear on click -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappear Button</title>
+<!-- Adding css for bettor looks -->
+    <style>
+     .Buuton{
+        font-size: large;
+        margin: 50px;
+     }
+    </style>
+</head>
+<body>
+
+<button class="Buuton" id="myButton" onclick="makeDisappear()">Click here to disappear</button>
+
+<script>
+    function makeDisappear() {
+        document.getElementById("myButton").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+

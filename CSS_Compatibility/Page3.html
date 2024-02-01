@@ -1,0 +1,62 @@
+<!-- Create a Grid with Different Types: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+     
+        .basic-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+ 
+     
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+ 
+        .centered-grid {
+            display: grid;
+            place-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h2>Basic Grid</h2>
+    <div class="basic-grid">
+        <div>Hello People</div>
+        <div>Hello People</div>
+        <div>Hello People</div>
+    </div>
+
+  
+    <h2>Responsive Grid</h2>
+    <div class="responsive-grid">
+        <div>Suman Kumar</div>
+        <div>Suman Kumar</div>
+        <div>Suman Kumar</div>
+        <div>Suman Kumar</div>
+        <div>Suman Kumar</div>
+        <div>Suman Kumar</div>
+    </div>
+
+   
+    <h2>Centered Grid</h2>
+    <div class="centered-grid">
+        <div>Software Developer</div>
+        <div>Software Developer</div>
+        <div>Software Developer</div>
+    </div>
+
+</body>
+</html>

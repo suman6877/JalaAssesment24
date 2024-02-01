@@ -1,0 +1,45 @@
+<!-- Adding Opacity to a image -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .opacity-container {
+      position: relative;
+      width: 600px;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .opacity-image {
+      width: 300%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 1; 
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #232d2e;
+      font-size: 38px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="opacity-container">
+  <img class="opacity-image" src="https://images.pexels.com/photos/20003297/pexels-photo-20003297/free-photo-of-a-snowy-road-with-trees-and-snow-on-the-ground.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+   alt="Image with Opacity">
+  <div class="overlay-text">JALA Academy is the world’s first Academy offering 100% Job guarantee 
+    Programs without Trainers from 0 to 20 years’ experience.</div>
+</div>
+
+</body>
+</html>
